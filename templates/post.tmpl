@@ -39,13 +39,13 @@
     % else:
         <li>Author: ${post.author()|h}</li>
     % endif
-    <li>${helper.html_tags(post)}</li>
 
     % if post.meta('link'):
         <li><a href="${post.meta('link')}">${messages("Original site")}</a></li>
     % endif
     </ul>
     </div>
+    ${helper.html_tags(post)}
     ${helper.html_pager(post)}
 
 </div>
