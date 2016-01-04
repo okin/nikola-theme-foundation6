@@ -1,5 +1,10 @@
+# foundation6
 
-# Usage
+This is a theme for the static site generator [Nikola](https://getnikola.com) using the [Foundation](http://foundation.zurb.com) framework.
+
+It aims to be simple, elegant and not bloat the overall size of your site too much.
+
+## Usage
 
 Go to the root directory of your Nikola site.
 
