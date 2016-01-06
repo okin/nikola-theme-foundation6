@@ -7,3 +7,6 @@
 
 .label a {
     color: #FFFFFF; }
+
+.blog-post .callout ul.menu.simple li a {
+    display: inline; }
