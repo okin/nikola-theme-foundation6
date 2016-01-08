@@ -10,3 +10,6 @@
 
 .blog-post .callout ul.menu.simple li a {
     display: inline; }
+
+menu > li:not(.menu-text) > a {
+    display: inline; }
