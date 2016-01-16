@@ -44,9 +44,13 @@
         <li><a href="${post.meta('link')}">${messages("Original site")}</a></li>
     % endif
     </ul>
+	
     </div>
     ${helper.html_tags(post)}
     ${helper.html_pager(post)}
-
+    % if not post.meta('nocomments') and site_has_comments:
+        ${comments.comment_form(post.permalink(absolute=True), post.title(), post._base_path)}
+    % endif
+    ${comments.comment_link_script()}
 </div>
 </%block>
