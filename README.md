@@ -43,5 +43,5 @@ Components used are:
 * Media
   * Label
 
-If you want to replace this with your own custom Foundation 6 - i.e. with different colors - just replace the foundation.min.css and foundation.min.js in the assets.
+If you want to replace this with your own custom Foundation 6 - i.e. with different colors - just replace the foundation.min.css in the assets.
 
