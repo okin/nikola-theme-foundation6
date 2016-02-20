@@ -14,7 +14,7 @@
 .menu > li:not(.menu-text) > a {
     display: inline; }
 
-.pre.code {
+pre.code.literal-block {
     padding: 1em;
     background-color: #EEEEEE;
     margin-bottom: 1em;}
