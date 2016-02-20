@@ -13,3 +13,8 @@
 
 .menu > li:not(.menu-text) > a {
     display: inline; }
+
+.pre.code {
+    padding: 1em;
+    background-color: #EEEEEE;
+    margin-bottom: 1em;}
