@@ -27,6 +27,16 @@
     ${helper.meta_translations(post)}
 </%block>
 
+<%block name="page_header">
+%if title and not post.meta('hidetitle'):
+    <h1>${post.title()|h}</h1>
+    <h2 class="subheader"><small>${post.formatted_date(date_format)|h}</small></h2>
+%else:
+    <h1>${blog_title|h}</h1>
+    <h2 class="subheader">${blog_description|h}</h2>
+%endif
+</%block>
+
 <%block name="content">
 <div class="blog-post">
     ${pheader.html_post_header()}
@@ -44,7 +54,7 @@
         <li><a href="${post.meta('link')}">${messages("Original site")}</a></li>
     % endif
     </ul>
-	
+
     </div>
     ${helper.html_tags(post)}
     ${helper.html_pager(post)}

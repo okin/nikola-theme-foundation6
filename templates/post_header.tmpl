@@ -28,7 +28,6 @@
 </%def>
 
 <%def name="html_post_header()">
-    <h3>${post.title()|h} <small>${post.formatted_date(date_format)|h}</small></h3>
         %if post.description():
             <div class="metadata">
                 <meta name="description" itemprop="description" content="${post.description()|h}">

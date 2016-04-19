@@ -1,10 +1,17 @@
 ## -*- coding: utf-8 -*-
 <%inherit file="base.tmpl"/>
 
+<%block name="page_header">
+%if title:
+    <h1>${blog_title|h}</h1>
+    <h2>${title|h}</h2>
+%else:
+    <h1>${blog_title|h}</h1>
+    <h2 class="subheader">${blog_description|h}</h2>
+%endif
+</%block>
+
 <%block name="content">
-    <header>
-        <h1>${title|h}</h1>
-    </header>
     % if cat_items:
         % if items:
             <h2>${messages("Categories")}</h2>

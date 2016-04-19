@@ -14,8 +14,10 @@ ${template_hooks['extra_head']()}
 ${header.html_header()}
 <div class="callout large primary">
 <div class="row column text-center">
+<%block name="page_header">
 <h1>${blog_title|h}</h1>
 <h2 class="subheader">${blog_description|h}</h2>
+</%block>
 </div>
 </div>
 
